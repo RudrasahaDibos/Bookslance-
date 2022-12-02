@@ -1,0 +1,79 @@
+import React from 'react';
+
+const Register = () => {
+
+
+
+
+
+
+    
+    return (
+     
+             <div className='loginnow'>  
+            
+            <h1>LOGIN NOW</h1>
+            <form onSubmit={handleSubmit(onSubmit)} >
+           <input
+            type="email" 
+            className='input-box' 
+            placeholder='ENTER YOUR EMAIL'
+            {...register("email", {
+                required:{
+                     value:true,
+                     message:"Email is requried "
+                },
+            
+              pattern: {
+                value: /[A-Za-z]{3}/,
+                message: 'Enter  Your  a vaild email '
+              }
+            
+            })} 
+            />
+             <label>
+  {errors.email?.type === 'required' &&  <span className="label-text-alt ">{errors.email.message}</span>}
+  {errors.email?.type === 'pattern' &&  <span className="label-text-alt ">{errors.email.message}</span>}
+  </label>
+
+
+           <input 
+           type="password" 
+           className='input-box'
+            placeholder='ENTER YOUR PASSWORD'
+            {...register("password", {
+                required:{
+                     value:true,
+                     message:" password is requried "
+                },
+            
+                minLength: {
+                    value: 6,
+                    message: 'minimum length is 6 charecter' 
+                  }
+            
+            })} 
+            
+            />
+     <label>
+  {errors.password?.type === 'required' &&  <span class="label-text-alt ">{errors.password.message}</span>}
+  {errors.password?.type === 'minLength' &&  <span class="label-text-alt ">{errors.password.message}</span>}
+  </label>
+
+
+
+           <br />
+           <a href="">FORGET PASSWORD ?</a>
+           <br />
+           {signInError}
+           <input  className='loginbutton'type="submit" value="Login" />
+           </form>
+            <hr></hr>
+            <p className='or'>OR</p>
+            <button onClick={()=>signInWithGoogle()}  type='button' className='googlebutton' >LOGIN WITH GOOGLE</button>
+            <p>DON'T HAVE AN ACCOUNT YET ? <Link>CREATE A ACCOUNT !</Link> </p>
+        </div>
+    );
+};
+
+export default Register;
