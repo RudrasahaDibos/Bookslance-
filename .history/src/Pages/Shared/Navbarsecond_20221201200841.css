@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+    margin: 10px 100px;
+    padding: 5px;
+   
+    overflow: hidden;
+    background-color: #333;
+   
+  }
+  .sticky {
+     position: sticky;
+    top:0;
+   
+  }
+  
+  li {
+    float: right;
+   
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    
+    padding: 14px 30px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+   
