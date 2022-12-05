@@ -1,0 +1,5 @@
+.headercontent{
+    display: flex;
+    a
+  justify-content: space-around;  
+}

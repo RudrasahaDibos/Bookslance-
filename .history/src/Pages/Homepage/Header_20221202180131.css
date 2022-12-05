@@ -1,0 +1,23 @@
+.headercontent{
+    margin-top: 100px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+  position: absolute;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+   
+}
+.headertext{
+    margin-top: 10px;
+    margin-left: 100px;
+    color: w;
+}
+img{
+    width:70%;
+    margin-top: 150px;
+    margin-left: 150px;
+}

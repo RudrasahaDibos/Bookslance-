@@ -1,0 +1,31 @@
+.headercontent{
+    margin-top: 100px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+  justify-content: space-around;
+  position: fixed;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+   
+}
+.headertext{
+    margin-top: 80px;
+    margin-left: 100px;
+    color: white;
+}
+img{
+    width:70%;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.headertext h{
+    font-size: 3.5em;
+    line-height: 55px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-weight: 700;
+     margin: 0px;
+}
