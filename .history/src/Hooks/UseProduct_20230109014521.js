@@ -1,0 +1,6 @@
+
+const UseProduct=()=>{
+   const [] = use
+
+
+}
